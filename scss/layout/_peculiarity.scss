@@ -1,0 +1,33 @@
+.peculiarity {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.peculiarity__item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
+}
+.peculiarity__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--sixth-color);
+  margin-bottom: 30px;
+}
+.peculiarity__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--second-color);
+  margin-bottom: 10px;
+}
+.peculiarity__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--third-color);
+}

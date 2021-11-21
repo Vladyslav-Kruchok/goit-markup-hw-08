@@ -1,0 +1,29 @@
+/*#region ----------teg---------- #*/
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: var(--first-font);
+  font-style: normal;
+  color: var(--first-color);
+  background-color: var(--first-color);
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+header {
+  border-bottom: 1px solid var(--seven-color);
+}
+/*#endregion #*/
