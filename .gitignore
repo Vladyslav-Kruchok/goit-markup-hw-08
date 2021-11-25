@@ -78,3 +78,5 @@ typings/
 # My
 err.txt
 .vscode/
+.images/img/
+.images/img.zip
