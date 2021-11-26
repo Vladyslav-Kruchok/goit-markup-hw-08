@@ -1002,8 +1002,26 @@ header {
 }
 
 .footer__container {
-  align-items: baseline;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 
 /*#endregion #*/
@@ -1013,34 +1031,72 @@ header {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-logo {
+    text-align: center;
+  }
+}
+
 .footer-logo--white {
   color: var(--first-color);
 }
 
 /*#endregion #*/
 /*#region ----------footer-contacts---------- #*/
-.footer-contacts {
-  margin-right: 70px;
-  flex-grow: 1;
+@media screen and (max-width: 767px) {
+  .footer-contacts {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-.footer-contacts__list {
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address {
+    text-align: center;
+  }
+}
+
+.address__list {
   font-size: 14px;
   line-height: calc(24 / 14);
 }
 
-.footer-contacts__item:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .address__item {
+    text-align: center;
+  }
+}
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contacts--address {
+.address__link--address {
   text-decoration: none;
   color: var(--first-color-white);
   font-style: normal;
   margin-bottom: 9px;
 }
 
-.footer-contacts--email-tel {
+.address__link--email,
+.address__link--tel {
   text-decoration: none;
   color: var(--fifth-color);
   font-style: normal;
@@ -1049,8 +1105,12 @@ header {
 
 /*#endregion #*/
 /*#region ----------footer-social---------- #*/
-.footer-social {
-  padding-top: 60px;
+@media screen and (max-width: 767px) {
+  .footer-social {
+    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-social__title {
@@ -1059,6 +1119,18 @@ header {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 23px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social__title {
+    text-align: center;
+  }
 }
 
 .social__link--footer {
@@ -1076,6 +1148,14 @@ header {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-inform {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+}
+
 .footer-inform__title {
   font-weight: 700;
   font-size: 14px;
@@ -1084,41 +1164,72 @@ header {
   margin-bottom: 23px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-inform__title {
+    text-align: center;
+  }
+}
+
 .footer-form {
   display: flex;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer-form__input {
-  width: 358px;
   height: 50px;
   padding: 15px 10px;
   color: var(--first-color);
+  background-color: transparent;
   overflow: hidden;
   outline: none;
   border-style: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
 }
 
 .footer-form__btn {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 50px;
-  margin-left: 12px;
-  background: var(--icon-color-active);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
   color: var(--first-color);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+  background: var(--icon-color-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__btn {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .footer-form__icon {
