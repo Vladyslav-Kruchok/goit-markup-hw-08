@@ -427,6 +427,10 @@ header {
   }
 }
 
+.mob-menu-btn:hover, .mob-menu-btn:focus {
+  fill: var(--icon-color-active);
+}
+
 .menu-box__btn {
   position: absolute;
   top: 10px;
@@ -444,7 +448,7 @@ header {
 }
 
 .menu-box__btn:hover, .menu-box__btn:focus {
-  fill: var(--active-item-color);
+  fill: var(--icon-color-active);
 }
 
 @media screen and (min-width: 768px) {
