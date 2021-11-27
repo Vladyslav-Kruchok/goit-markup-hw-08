@@ -384,8 +384,6 @@ header {
 /*#region mobile-menu #*/
 .menu-box {
   width: 100%;
-  height: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
@@ -394,6 +392,8 @@ header {
 @media screen and (max-width: 767px) {
   .menu-box {
     display: none;
+    height: 100%;
+    position: fixed;
     padding: 48px 40px;
     background-color: var(--first-color);
   }
