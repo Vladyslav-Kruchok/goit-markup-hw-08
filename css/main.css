@@ -687,6 +687,13 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .what-todo_img {
+    width: 370px;
+    height: 294px;
+  }
+}
+
 /*#endregion #*/
 /*#region ----------team-section---------- #*/
 .section--team-bg {

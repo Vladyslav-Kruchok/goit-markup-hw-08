@@ -37,4 +37,10 @@
     display: none;
   }
 }
+.what-todo_img {
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
+}
 /*#endregion #*/

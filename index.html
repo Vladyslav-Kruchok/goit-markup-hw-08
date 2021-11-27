@@ -177,16 +177,51 @@
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="what-todo">
           <li class="what-todo__item">
-            <img src="./images/project_1.jpg" alt="Фото разаботки проекта" width="370" height="294" />
+          <picture>
+            <!--#region desktop #-->
+            <source media="(min-width: 1200px)" srcset="
+                ./images/proj/occ-1-desktop.webp 1x,
+                ./images/proj/occ-1-desktop@2x.webp 2x
+              " type="image/webp" />
+            <source media="(min-width: 1200px)" srcset="
+                ./images/proj/occ-1-desktop.jpg 1x,
+                ./images/proj/occ-1-desktop@2x.jpg 2x
+              " />
+            <!--#endregion #-->
+            <img class="what-todo_img" src="#" alt="Фото разаботки проекта" />
+          </picture>
             <div class="what-todo__overlay">Десктопные приложения</div>
           </li>
           <li class="what-todo__item">
-            <img src="./images/project_2.jpg" alt="Фото адаптации проекта к мобильным устройствам" width="370"
-              height="294" />
+            <picture>
+            <!--#region desktop #-->
+            <source media="(min-width: 1200px)" srcset="
+                            ./images/proj/occ-2-desktop.webp 1x,
+                            ./images/proj/occ-2-desktop@2x.webp 2x
+                          " type="image/webp" />
+            <source media="(min-width: 1200px)" srcset="
+                            ./images/proj/occ-2-desktop.jpg 1x,
+                            ./images/proj/occ-2-desktop@2x.jpg 2x
+                          " />
+            <!--#endregion #-->
+            <img class="what-todo_img" src="#" alt="Фото адаптации проекта к мобильным устройствам" />
+            </picture>
             <div class="what-todo__overlay">Мобильные приложения</div>
           </li>
           <li class="what-todo__item">
-            <img src="./images/project_3.jpg" alt="Фото подбора цветовой палитры проекта" width="370" height="294" />
+          <picture>
+            <!--#region desktop #-->
+            <source media="(min-width: 1200px)" srcset="
+                          ./images/proj/occ-3-desktop.webp 1x,
+                          ./images/proj/occ-3-desktop@2x.webp 2x
+                        " type="image/webp" />
+            <source media="(min-width: 1200px)" srcset="
+                          ./images/proj/occ-3-desktop.jpg 1x,
+                          ./images/proj/occ-3-desktop@2x.jpg 2x
+                        " />
+            <!--#endregion #-->
+            <img class="what-todo_img" src="#" alt="Фото подбора цветовой палитры проекта" />
+          </picture>
             <div class="what-todo__overlay">Дизайнерские решения</div>
           </li>
         </ul>
