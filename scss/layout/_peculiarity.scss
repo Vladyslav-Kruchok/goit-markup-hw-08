@@ -1,22 +1,40 @@
 .peculiarity {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .peculiarity__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 .peculiarity__box {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 30px;
+
   height: 120px;
+
   border-radius: 4px;
   background-color: var(--sixth-color);
-  margin-bottom: 30px;
 }
 .peculiarity__title {
   font-weight: 700;
@@ -25,6 +43,9 @@
   text-transform: uppercase;
   color: var(--second-color);
   margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .peculiarity__text {
   font-size: 14px;

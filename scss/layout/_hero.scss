@@ -1,4 +1,4 @@
-/*#region ----------XXX---------- #*/
+/*#region ----------Hero---------- #*/
 .hero {
   background: var(--fourth-color);
   text-align: center;
@@ -16,10 +16,8 @@
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
-
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/hero-mob.jpg);
-    max-width: 480px;
 
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)),
