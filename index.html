@@ -665,7 +665,70 @@
       </div>
     </footer>
     <!--#endregion #-->
-
+    <!--#region modal-order #-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg class="modal__icon">
+            <use href="./images/symbol-defs.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+        <!-- form -->
+        <form class="form-order" autocomplete="on">
+          <!-- form name -->
+          <p class="form-order__title">Оставьте свои данные, мы вам перезвоним</p>
+          <!-- name -->
+          <label class="form-order__label">
+            Имя
+            <span class="input-cover">
+              <input class="form-order__input" type="text" name="form-order-name" />
+              <svg class="form-order__icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+    
+          <!-- telephone -->
+          <label class="form-order__label">
+            Телефон
+            <span class="input-cover">
+              <input class="form-order__input" type="tel" name="form-order-tel" />
+              <svg class="form-order__icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+    
+          <!-- email -->
+          <label class="form-order__label">
+            Почта
+            <span class="input-cover">
+              <input class="form-order__input" type="email" name="form-order-email" />
+              <svg class="form-order__icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+    
+          <!-- comment -->
+          <label class="form-order__label">
+            Комментарий
+            <textarea class="form-order__textarea" placeholder="Введите текст"></textarea>
+          </label>
+    
+          <!-- agree -->
+          <label class="form-order__label-chbx">
+            <input class="form-order__input-chbx visually-hidden" type="checkbox" />
+            <span class="form-order__icon-chbx"></span>
+            <span>Соглашаюсь с рассылкой и принимаю <a class="form-order__link-agree" href="">Условия договора</a></span>
+          </label>
+    
+          <!-- submit-button -->
+          <button class="form-order__btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <!--#endregion #-->
     
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
