@@ -314,6 +314,9 @@ header {
   .contacts {
     display: block;
   }
+  .contacts:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -327,12 +330,6 @@ header {
 @media screen and (max-width: 767px) {
   .contacts__item:not(:first-child) {
     margin-bottom: 37px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
   }
 }
 
