@@ -16,16 +16,18 @@
 }
 .modal {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
 
   background-color: var(--first-color);
 
   transition: var(--animate-bck-color);
-
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
@@ -164,6 +166,14 @@
   background-size: cover;
   background-origin: border-box;
   border-radius: 4px;
+  @media screen and (min-width: 1200) {
+    width: 16px;
+    height: 15px;
+  }
+}
+.form-order__text {
+  display: block;
+  width: 100%;
 }
 .form-order__link-agree {
   color: var(--active-item-color);

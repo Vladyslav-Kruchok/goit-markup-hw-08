@@ -39,12 +39,9 @@
   color: var(--second-color);
   text-align: center;
   margin-bottom: 10px;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: calc(19 / 16);
-  }
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(19 / 16);
 }
 .team__text {
   margin-bottom: 16px;

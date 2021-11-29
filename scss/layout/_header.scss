@@ -15,8 +15,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -127,10 +127,15 @@
 .contacts__item {
   @media screen and (max-width: 767px) {
     &:not(:first-child) {
-      margin-top: 307px;
       margin-bottom: 37px;
     }
   }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -200,7 +205,9 @@
     background-color: var(--first-color);
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   @media screen and (min-width: 768px) {
