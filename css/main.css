@@ -633,6 +633,9 @@ header {
   .peculiarity__item {
     flex-basis: calc((100% - 120px) / 4);
   }
+  .peculiarity__item:not(:last-child) {
+    margin-top: 30px;
+  }
 }
 
 .peculiarity__item:not(:first-child) {
